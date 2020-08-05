@@ -13,9 +13,9 @@ export default new Router({
       name: 'Hello',     //路由名称，
       component: Hello,  //对应的组件模板
       beforeEnter:(to,from,next)=>{
-        console.log('我进入了params模板');
-        console.log(to);
-        console.log(from);
+        // console.log('我进入了params模板');
+        // console.log(to);
+        // console.log(from);
         next();
       },
     },{

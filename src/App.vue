@@ -1,17 +1,22 @@
 <template>
   <div id="app">
+    <to-header></to-header>
     <router-view></router-view>
+    <to-footer></to-footer>
   </div>
 </template>
 
 <script>
 // import vuex from './page/vuexdemo/Vuex'
+import toHeader from './components/header/head'
+import toFooter from './components/footer/footer'
 
 export default {
   name: 'App',
-  // components: {
-  //   vuex
-  // }
+  components: {
+    toHeader,
+    toFooter,
+  },
 }
 </script>
 
