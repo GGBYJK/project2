@@ -24,9 +24,6 @@ export default {
 
 
 <style lang="less">
-::-webkit-scrollbar {
-  display: none;
-}
 #app {
   height: 100%;
   width: 100%;

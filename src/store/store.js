@@ -6,6 +6,7 @@ export default new Vuex.Store({
   state:{
     count:0,
     changeShowCol:true,
+    footerList:[]
   },
 
   getters:{
