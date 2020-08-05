@@ -7,7 +7,9 @@ import Vant from 'vant';
 import qs from 'qs'
 import Vconsole from 'vconsole'
 import 'vant/lib/index.css';
+import { Lazyload } from 'vant';
 
+Vue.use(Lazyload);
 Vue.use(Vant);
 Vue.use(Less);
 let vconsole = new Vconsole()

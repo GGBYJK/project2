@@ -6,7 +6,7 @@ export default new Vuex.Store({
   state:{
     count:0,
     changeShowCol:true,
-    footerList:[]
+    footerList:["首页","搜索","个人中心","设置"]
   },
 
   getters:{
