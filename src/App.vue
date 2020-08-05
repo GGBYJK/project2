@@ -1,34 +1,41 @@
 <template>
   <div id="app">
-    <to-header></to-header>
-    <router-view></router-view>
-    <to-footer></to-footer>
+    <to-header style="z-index:10000;"></to-header>
+    <div class="content">
+      <router-view></router-view>
+    </div>
+    <to-footer style="z-index:10000;"></to-footer>
   </div>
 </template>
 
 <script>
 // import vuex from './page/vuexdemo/Vuex'
-import toHeader from './components/header/head'
-import toFooter from './components/footer/footer'
+import toHeader from "./components/header/head";
+import toFooter from "./components/footer/footer";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     toHeader,
-    toFooter,
-  },
-}
+    toFooter
+  }
+};
 </script>
 
-<style>
+
+<style lang="less">
+::-webkit-scrollbar {
+  display: none;
+}
 #app {
   height: 100%;
   width: 100%;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  .content {
+    height: calc(100% - 96px);
+    position: relative;
+    top: 46px;
+    padding-bottom: 50px;
+  }
 }
 </style>
